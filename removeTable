@@ -12,6 +12,6 @@ con.connect( (err) => {
         var sql = "DELETE from book (id, auteur, nbrePages, titre) VALUES ('', '', '', '' )"  
     con.query(sql, (err, result) => {
         if(err) throw err;
-        return 'record updated'+ result.id;
+        return 'record Deleted'+ result.id;
     })
 })
